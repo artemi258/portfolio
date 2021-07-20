@@ -1,0 +1,21 @@
+.sidebar {
+    position: fixed;
+    left: -107px;
+    top: 386px;
+    display: flex;
+    align-items: center;
+    transform: rotate(-90deg);
+    z-index: 10;
+    &__border {
+        background-color: #000000;
+        height: 2px;
+        width: 70px;
+        margin-left: 15px;
+    }
+    &__icons {
+        height: 19px;
+        width: 20px;
+        transform: rotate(90deg);
+        margin-left: 15px;
+    }
+}

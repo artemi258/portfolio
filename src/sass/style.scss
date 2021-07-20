@@ -1,7 +1,12 @@
 @import 'libs/bootstrap-reboot.min';
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
 @import 'base/variables';
+@import 'base/mixins';
 @import 'blocks/header';
+@import 'blocks/title';
+@import 'blocks/burger';
+@import 'blocks/sidebar';
+@import 'blocks/navMenu';
 
 * {
     font-family: 'Poppins', sans-serif;
@@ -12,7 +17,4 @@
 .container {
     width: 1140px;
     margin: 0 auto;
-}
-button:focus {
-    outline: none;
 }
