@@ -34,5 +34,7 @@
     "maintained node versions",
     "not dead"
   ],
-  "dependencies": {}
+  "dependencies": {
+    "jshint": "^2.13.0"
+  }
 }

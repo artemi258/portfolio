@@ -12,7 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
           });
           close.addEventListener('click', () => {
             menu.style.left = '-345px';
-            sidebar.style.display = 'block';
+            sidebar.style.display = 'flex';
             document.querySelector('.overlay').style.display = 'none';
             document.querySelector('.overlay').style.zIndex = '';
           });
