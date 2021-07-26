@@ -4,6 +4,7 @@
     line-height: 60px;
     letter-spacing: 0em;
     margin-top: 9px;
+    color: #000000;
     z-index: 2;
     &__fz16 {
         font-size: 16px;
@@ -25,5 +26,19 @@
     }
     &__fz48 {
         font-size: 48px;
+    }
+    &__fz36 {
+        font-size: 36px;
+        margin: 6px 0 0 0;
+    }
+    &__fz20 {
+        font-size: 20px;
+        line-height: 30px;
+        margin: 0;
+    }
+    &__fz14 {
+        margin-top: 0;
+        font-size: 14px;
+        line-height: 21px;
     }
 }

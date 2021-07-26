@@ -8,12 +8,10 @@ window.addEventListener('DOMContentLoaded', () => {
             menu.style.left = '0';
             sidebar.style.display = 'none';
             document.querySelector('.overlay').style.display = 'block';
-            document.querySelector('.overlay').style.zIndex = '5';
           });
           close.addEventListener('click', () => {
-            menu.style.left = '-345px';
+            menu.style.left = '-30%';
             sidebar.style.display = 'flex';
             document.querySelector('.overlay').style.display = 'none';
-            document.querySelector('.overlay').style.zIndex = '';
           });
 });

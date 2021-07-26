@@ -1,0 +1,94 @@
+.resume {
+    padding-top: 120px;
+    &__title {
+        text-align: center;
+        padding-left: 0;
+        margin-bottom: 0;
+        &::before {
+           left: 50%;
+           transform: translateX(-50%);
+        }
+    }
+    &__sub {
+        text-align: center;
+    }
+    &__wrapper {
+        padding: 60px 72px 0 72px;
+        display: grid;
+        grid-template-columns: repeat(2, 420px);
+        column-gap: 143px;
+        row-gap: 45px;
+    }
+    &__block {
+        position: relative;
+        padding-left: 56px;
+    }
+    &__item {
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 1px;
+            left: -43px;
+            top: 15px;
+            background-color: #000;
+        }
+    }
+    &__circle {
+        position: relative;
+        &::before {
+                content: "";
+                position: absolute;
+                height: 15px;
+                width: 15px;
+                top: 50%;
+                left: -35px;
+                transform: translate(-100%, -50%);
+                border-radius: 100%;
+                background-color: $color;
+        }
+    }
+    &__img {
+        position: absolute;
+        left: 18px;
+        top: 14px;
+        &::after {
+            content: "";
+            position: absolute;
+            height: 1px;
+            width: 43px;
+            left: -104px;
+            transform: translateX(100%);
+            top: 18%;
+            background-color: #000;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            transform: translateX(-50%);
+            z-index: -1;
+            height: 36px;
+            width: 36px;
+            background-color: $color;
+            border-radius: 100%;
+        }
+    }
+    &__university {
+        margin-top: 45px;
+    }
+    &__text {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        margin-top: 12px;
+    }
+    &__diploma {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
