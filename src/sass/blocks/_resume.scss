@@ -15,9 +15,8 @@
     &__wrapper {
         padding: 60px 72px 0 72px;
         display: grid;
-        grid-template-columns: repeat(2, 420px);
+        grid-template-columns: repeat(2, auto);
         column-gap: 143px;
-        row-gap: 45px;
     }
     &__block {
         position: relative;
@@ -25,12 +24,13 @@
     }
     &__item {
         position: relative;
+        padding-left: 50px;
         &::before {
             content: "";
             position: absolute;
-            height: 100%;
+            height: calc(100% + 45px);
             width: 1px;
-            left: -43px;
+            left: 7px;
             top: 15px;
             background-color: #000;
         }
@@ -74,6 +74,9 @@
             background-color: $color;
             border-radius: 100%;
         }
+    }
+    &__column {
+        overflow: hidden;
     }
     &__university {
         margin-top: 45px;
