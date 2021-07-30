@@ -14,4 +14,20 @@ window.addEventListener('DOMContentLoaded', () => {
             sidebar.style.display = 'flex';
             document.querySelector('.overlay').style.display = 'none';
           });
-});
+
+    const stripe = document.querySelectorAll('.chart__stripe'),
+          num = document.querySelectorAll('.chart__num');
+          let numContent = [];
+
+          num.forEach(item => {
+                numContent.push(item.textContent);
+          });
+          console.log(stripe);
+
+          stripe.forEach((item, i) => {
+            item.style.background = `linear-gradient(to right, #FFA501 ${numContent[i]}, #E8E4DE ${100 - numContent[i].replace(/%/g, "")}%)`;
+          });
+
+
+
+  });

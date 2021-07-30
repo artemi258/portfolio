@@ -1,0 +1,44 @@
+.chart {
+    padding-top: 120px;
+    &__wrapper {
+        display: grid;
+        grid-template: repeat(2, 70px) / repeat(3, 350px);
+        column-gap: 46px;
+        row-gap: 30px;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__elem {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {
+        padding-left: 13px;
+        margin: 0;
+        display: inline-block;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            top: -40%;
+            left: 0;
+            z-index: -1;
+            height: 36px;
+            width: 36px;
+            background-color: $color;
+            border-radius: 100%;
+        }
+    }
+    &__num {
+        display: inline-block;
+    }
+    &__stripe {
+        width: 350px;
+        height: 14px;
+        background-color: #E8E4DE;
+        border-radius: 4px;
+    }
+}
