@@ -13,3 +13,9 @@
                 outline: none;
             }
 } 
+@mixin titleBefor {
+    &::before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

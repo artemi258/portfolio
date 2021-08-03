@@ -11,6 +11,8 @@
 @import 'blocks/resume';
 @import 'blocks/skills';
 @import 'blocks/chart';
+@import 'blocks/portfolio';
+@import 'blocks/price';
 
 * {
     font-family: 'Poppins', sans-serif;
@@ -27,7 +29,13 @@
     height: 3px;
     background-color: $color;
     margin-top: 4px;
-    &__resume {
+    &__center {
         margin: 25px auto 0 auto;
+    }
+.circleCenter {
+        &::before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
     }
 }

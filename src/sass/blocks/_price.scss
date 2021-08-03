@@ -1,0 +1,7 @@
+.price {
+    padding-top: 60px;
+    &__title {
+        text-align: center;
+        @include titleBefor;
+    }
+}

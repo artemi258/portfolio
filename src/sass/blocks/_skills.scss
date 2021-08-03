@@ -4,10 +4,7 @@
         text-align: center;
         padding-left: 0;
         margin-bottom: 0;
-        &::before {
-            left: 50%;
-            transform: translateX(-50%);
-        }
+        @include titleBefor;
         &-sub {
             text-align: center;
         }
