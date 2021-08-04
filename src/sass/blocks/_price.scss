@@ -4,4 +4,47 @@
         text-align: center;
         @include titleBefor;
     }
+    &__wrapper {
+        margin-top: 60px;
+        padding: 0 50px 0 75px;
+        display: grid;
+        grid-template: repeat(3, 44px) / repeat(2, 367px);
+        justify-content: space-between;
+        row-gap: 15px;
+    }
+    &__title {
+        margin: 0;
+        text-align: center;
+        &-item {
+            text-align: start;
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                background: $color;
+                border-radius: 100%;
+                left: -10px;
+                transform: translate(-100%, 20%);
+            }
+        }
+    }
+    &__rub {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 21px;
+        justify-self: end;
+    }
+    &__text {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        grid-column: 1/3;
+    }
+    &__item {
+        display: grid;
+        grid-template: repeat(2, 21px) / 190px 121px;
+        place-content: space-between;
+    }
 }
