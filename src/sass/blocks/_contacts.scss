@@ -1,0 +1,8 @@
+.contacts {
+    padding-top: 120px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 400px 585px;
+        column-gap: 68px;
+    }
+}
